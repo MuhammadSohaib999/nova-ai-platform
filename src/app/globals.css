@@ -1,6 +1,7 @@
 @import "tailwindcss";
-
+@source "../../src";
 @theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --animate-gradient: gradient 8s linear infinite;
   --animate-shiny-text: shiny-text 8s infinite;
   --animate-marquee: marquee var(--duration) infinite linear;
@@ -94,17 +95,17 @@ body {
 
 /* ===== GLASSMORPHISM ===== */
 .glass {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .glass-strong {
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 /* ===== GLOW EFFECTS ===== */
